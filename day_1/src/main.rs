@@ -48,11 +48,11 @@ fn main() -> io::Result<()>{
     
     let mut sum: i32 = 0;
     let occurences: i32 = 0;
-    let prev_l: i32 = 0;
+    let _prev_l: i32 = 0;
     let _prev_ri: usize = 0;
     for l in columns[0].iter(){
 
-        if prev_l == *l {
+        if _prev_l == *l {
             sum += occurences * l;
             }
         else {
